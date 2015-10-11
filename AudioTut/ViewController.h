@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Recording.h"
 
-@interface ViewController : UIViewController <AVAudioRecorderDelegate,AVAudioPlayerDelegate>
+@interface ViewController : UIViewController 
 
 @property (strong, nonatomic) IBOutlet UIProgressView *myProgressView;
 @property (strong, nonatomic) IBOutlet UISlider *sliderVolumeOutlet;
@@ -19,21 +19,6 @@
 - (IBAction)stopButton:(id)sender;
 - (IBAction)playButton:(id)sender;
 - (IBAction)pauseButton:(id)sender;
-
-@property(strong,nonatomic) AVAudioRecorder *audioRecorder;
-@property(strong,nonatomic) AVAudioPlayer *audioPlayer;
-
-
-- (IBAction)recordButton:(id)sender;
-- (IBAction)stopRecordingButton:(id)sender;
-- (IBAction)pauseRecordingButton:(id)sender;
-- (IBAction)RecordingPlayButton:(id)sender;
-
-@property (strong, nonatomic) IBOutlet UISlider *sliderRecordVolumeOutlet;
-@property (strong, nonatomic) IBOutlet UILabel *recordTimeLabel;
-
-- (IBAction)recordVolumeAction:(id)sender;
-
 
 @end
 

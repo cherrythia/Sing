@@ -7,12 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Recording.h"
 
 @interface ViewController (){
     AVAudioPlayer *avPlayer;            //instance variable
-    AVAudioRecorder *avRecordPlayer;
-    int timeSec ;
-    int timeMin ;
+
     NSTimer *timer;
 }
 
@@ -33,41 +32,32 @@
     [avPlayer setVolume:self.sliderVolumeOutlet.value];
     [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updatemyProgress) userInfo:nil repeats:YES];
     
-    /****************Recorder********************/
-    NSArray *dirPaths;
-    NSString *docsDir;
+    Recording *recordingView = [[Recording alloc]init];
+    [self.view addSubview:recordingView];
+    recordingView.center = CGPointMake(250, 250);
     
-    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    docsDir = dirPaths[0];
+    //Turn off autoresizing masks
+    recordingView.translatesAutoresizingMaskIntoConstraints = NO;
     
-    NSString *soundFilePath = [docsDir stringByAppendingPathComponent:@"sound.caf"];
     
-    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    //Pin to bottom
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:recordingView
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                          toItem:self.view
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.0
+                                                           constant:0.0]];
     
-    NSDictionary *recordSettings = [NSDictionary
-                                    dictionaryWithObjectsAndKeys:
-                                    [NSNumber numberWithInt:AVAudioQualityMin],
-                                    AVEncoderAudioQualityKey,
-                                    [NSNumber numberWithInt:16],
-                                    AVEncoderBitRateKey,
-                                    [NSNumber numberWithInt: 2],
-                                    AVNumberOfChannelsKey,
-                                    [NSNumber numberWithFloat:44100.0],
-                                    AVSampleRateKey,
-                                    nil];
+    //Pin to center X
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:recordingView
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1.0
+                                                           constant:0.0]];
     
-    NSError *errorRecording = nil;
-    
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-    
-    self.audioRecorder = [[AVAudioRecorder alloc]initWithURL:soundFileURL settings:recordSettings error:&errorRecording];
-    
-    if (errorRecording) {
-        NSLog(@"errorRecording %@",[errorRecording localizedDescription]);
-    }else{
-        [self.audioRecorder prepareToRecord];
-    }
 }
 
 -(void)updatemyProgress{
@@ -102,95 +92,4 @@
     [avPlayer pause];
 }
 
-
-/******************************Recorder************************************/
-- (IBAction)recordButton:(id)sender {
-    
-    if (!self.audioRecorder.recording) {
-        [self.audioRecorder record];
-        
-        [self startTimer];
-    }
-}
-
--(void) startTimer{
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSDefaultRunLoopMode];
-}
-
--(void)timerTick:(NSTimer *)timer{
-    timeSec++;
-    if (timeSec == 60) {
-        timeSec =0;
-        timeMin++;
-    }
-    
-    NSString *timeNow = [NSString stringWithFormat:@"%02d:%02d",timeMin,timeSec];
-    self.recordTimeLabel.text = timeNow;
-    self.recordTimeLabel.textColor = [UIColor redColor];
-}
-
--(void) stopTimer {
-    [timer invalidate];
-    timeSec = 0;
-    timeMin = 0;
-    
-    NSString *timeNow = [NSString stringWithFormat:@"%02d:%02d",timeMin,timeSec];
-    self.recordTimeLabel.text =timeNow;
-    self.recordTimeLabel.textColor = [UIColor blackColor];
-}
-
-
--(IBAction)stopRecordingButton:(id)sender{
-    
-    if (self.audioRecorder.recording) {
-        [self.audioRecorder stop];
-        [self stopTimer];
-    }else if (self.audioPlayer.playing){
-        [self.audioPlayer stop];
-    }
-}
-
-- (IBAction)pauseRecordingButton:(id)sender {
-    
-}
-
-- (IBAction)RecordingPlayButton:(id)sender {
-    
-    if (!self.audioRecorder.recording) {
-        
-        NSError *error;
-        self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:self.audioRecorder.url error:&error];
-        
-        self.audioPlayer.delegate = self; //what does this means?
-        
-        if (error) {
-            NSLog(@"Error %@",[error localizedDescription]);
-        }else{
-            [self.audioPlayer play];
-        }
-    }
-}
-
-//DELEGATE METHODS
--(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    
-}
-
--(void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error{
-    NSLog(@"Decode Error Occured");
-}
-
--(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
-    
-}
-
--(void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder error:(NSError *)error{
-    NSLog(@"Encode Error Occured");
-}
-
-- (IBAction)recordVolumeAction:(id)sender {
-    UISlider *recordVolSlider = sender;
-    [self.audioPlayer setVolume:recordVolSlider.value];
-}
 @end
