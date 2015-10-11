@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		149F1C621B945C9400021597 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F1C611B945C9400021597 /* Recording.m */; };
+		142F507F1B96F124007F4650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 142F50701B96F124007F4650 /* AppDelegate.m */; };
+		142F50801B96F124007F4650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142F50711B96F124007F4650 /* Assets.xcassets */; };
+		142F50811B96F124007F4650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142F50731B96F124007F4650 /* LaunchScreen.storyboard */; };
+		142F50821B96F124007F4650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142F50751B96F124007F4650 /* Main.storyboard */; };
+		142F50831B96F124007F4650 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142F50771B96F124007F4650 /* Info.plist */; };
+		142F50851B96F124007F4650 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 142F507A1B96F124007F4650 /* Recording.m */; };
+		142F50861B96F124007F4650 /* Recording.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142F507B1B96F124007F4650 /* Recording.xib */; };
+		142F50871B96F124007F4650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142F507D1B96F124007F4650 /* ViewController.m */; };
+		142F50881B96F124007F4650 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142F507E1B96F124007F4650 /* ViewController.xib */; };
+		142F508A1B9701B2007F4650 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 142F50891B9701B2007F4650 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 */; };
 		14A48ABA1B9445D200DFAFB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A48AB91B9445D200DFAFB6 /* main.m */; };
-		14A48ABD1B9445D200DFAFB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A48ABC1B9445D200DFAFB6 /* AppDelegate.m */; };
-		14A48AC01B9445D200DFAFB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A48ABF1B9445D200DFAFB6 /* ViewController.m */; };
-		14A48AC51B9445D200DFAFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A48AC41B9445D200DFAFB6 /* Assets.xcassets */; };
-		14A48AC81B9445D200DFAFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A48AC61B9445D200DFAFB6 /* LaunchScreen.storyboard */; };
 		14A48AD31B9445D200DFAFB6 /* AudioTutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A48AD21B9445D200DFAFB6 /* AudioTutTests.m */; };
 		14A48ADE1B9445D200DFAFB6 /* AudioTutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A48ADD1B9445D200DFAFB6 /* AudioTutUITests.m */; };
 		14A48AEC1B9445E800DFAFB6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A48AEB1B9445E800DFAFB6 /* AVFoundation.framework */; };
-		14A48AEE1B94460C00DFAFB6 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A48AED1B94460C00DFAFB6 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 */; };
-		14A48AF01B94465A00DFAFB6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A48AEF1B94465A00DFAFB6 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		149F1C601B945C9400021597 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
-		149F1C611B945C9400021597 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		142F506F1B96F124007F4650 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		142F50701B96F124007F4650 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		142F50711B96F124007F4650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		142F50741B96F124007F4650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		142F50761B96F124007F4650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		142F50771B96F124007F4650 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142F50791B96F124007F4650 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		142F507A1B96F124007F4650 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		142F507B1B96F124007F4650 /* Recording.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Recording.xib; sourceTree = "<group>"; };
+		142F507C1B96F124007F4650 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		142F507D1B96F124007F4650 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		142F507E1B96F124007F4650 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		142F50891B9701B2007F4650 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3"; sourceTree = "<group>"; };
 		14A48AB51B9445D200DFAFB6 /* AudioTut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioTut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A48AB91B9445D200DFAFB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14A48ABB1B9445D200DFAFB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		14A48ABC1B9445D200DFAFB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14A48ABE1B9445D200DFAFB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14A48ABF1B9445D200DFAFB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		14A48AC41B9445D200DFAFB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14A48AC71B9445D200DFAFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14A48AC91B9445D200DFAFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A48ACE1B9445D200DFAFB6 /* AudioTutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioTutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A48AD21B9445D200DFAFB6 /* AudioTutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioTutTests.m; sourceTree = "<group>"; };
 		14A48AD41B9445D200DFAFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,8 +63,6 @@
 		14A48ADD1B9445D200DFAFB6 /* AudioTutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioTutUITests.m; sourceTree = "<group>"; };
 		14A48ADF1B9445D200DFAFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A48AEB1B9445E800DFAFB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		14A48AED1B94460C00DFAFB6 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3"; path = "../../../../../BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3"; sourceTree = "<group>"; };
-		14A48AEF1B94465A00DFAFB6 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142F50721B96F124007F4650 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				142F50731B96F124007F4650 /* LaunchScreen.storyboard */,
+				142F50751B96F124007F4650 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		14A48AAC1B9445D200DFAFB6 = {
 			isa = PBXGroup;
 			children = (
@@ -110,17 +124,18 @@
 		14A48AB71B9445D200DFAFB6 /* AudioTut */ = {
 			isa = PBXGroup;
 			children = (
-				14A48AED1B94460C00DFAFB6 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 */,
-				14A48ABB1B9445D200DFAFB6 /* AppDelegate.h */,
-				14A48ABC1B9445D200DFAFB6 /* AppDelegate.m */,
-				149F1C601B945C9400021597 /* Recording.h */,
-				149F1C611B945C9400021597 /* Recording.m */,
-				14A48ABE1B9445D200DFAFB6 /* ViewController.h */,
-				14A48ABF1B9445D200DFAFB6 /* ViewController.m */,
-				14A48AEF1B94465A00DFAFB6 /* ViewController.xib */,
-				14A48AC41B9445D200DFAFB6 /* Assets.xcassets */,
-				14A48AC61B9445D200DFAFB6 /* LaunchScreen.storyboard */,
-				14A48AC91B9445D200DFAFB6 /* Info.plist */,
+				142F50891B9701B2007F4650 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 */,
+				142F506F1B96F124007F4650 /* AppDelegate.h */,
+				142F50701B96F124007F4650 /* AppDelegate.m */,
+				142F50711B96F124007F4650 /* Assets.xcassets */,
+				142F50721B96F124007F4650 /* Base.lproj */,
+				142F50771B96F124007F4650 /* Info.plist */,
+				142F50791B96F124007F4650 /* Recording.h */,
+				142F507A1B96F124007F4650 /* Recording.m */,
+				142F507B1B96F124007F4650 /* Recording.xib */,
+				142F507C1B96F124007F4650 /* ViewController.h */,
+				142F507D1B96F124007F4650 /* ViewController.m */,
+				142F507E1B96F124007F4650 /* ViewController.xib */,
 				14A48AB81B9445D200DFAFB6 /* Supporting Files */,
 			);
 			path = AudioTut;
@@ -258,10 +273,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A48AEE1B94460C00DFAFB6 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 in Resources */,
-				14A48AC81B9445D200DFAFB6 /* LaunchScreen.storyboard in Resources */,
-				14A48AF01B94465A00DFAFB6 /* ViewController.xib in Resources */,
-				14A48AC51B9445D200DFAFB6 /* Assets.xcassets in Resources */,
+				142F50831B96F124007F4650 /* Info.plist in Resources */,
+				142F50821B96F124007F4650 /* Main.storyboard in Resources */,
+				142F50801B96F124007F4650 /* Assets.xcassets in Resources */,
+				142F508A1B9701B2007F4650 /* BLANK SPACE - Taylor Swift (The Sam Willows Cover).mp3 in Resources */,
+				142F50811B96F124007F4650 /* LaunchScreen.storyboard in Resources */,
+				142F50881B96F124007F4650 /* ViewController.xib in Resources */,
+				142F50861B96F124007F4650 /* Recording.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A48AC01B9445D200DFAFB6 /* ViewController.m in Sources */,
-				14A48ABD1B9445D200DFAFB6 /* AppDelegate.m in Sources */,
+				142F507F1B96F124007F4650 /* AppDelegate.m in Sources */,
 				14A48ABA1B9445D200DFAFB6 /* main.m in Sources */,
-				149F1C621B945C9400021597 /* Recording.m in Sources */,
+				142F50851B96F124007F4650 /* Recording.m in Sources */,
+				142F50871B96F124007F4650 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +343,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14A48AC61B9445D200DFAFB6 /* LaunchScreen.storyboard */ = {
+		142F50731B96F124007F4650 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14A48AC71B9445D200DFAFB6 /* Base */,
+				142F50741B96F124007F4650 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		142F50751B96F124007F4650 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				142F50761B96F124007F4650 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
