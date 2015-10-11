@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "74F87D882F192BE3C369626702D5EF9BFBFB008E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "74F87D882F192BE3C369626702D5EF9BFBFB008E" : 0,
+    "287314835EB35DD6FD161AF096DD5346223A2EEA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5DAC3205-BA48-4D02-9A0E-3FE6EB410D86",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "74F87D882F192BE3C369626702D5EF9BFBFB008E" : "github\/",
+    "287314835EB35DD6FD161AF096DD5346223A2EEA" : "github\/iOS\/Tutorial\/AudioTut\/AudioTut\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AudioTut",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/Tutorial\/AudioTut\/AudioTut.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cherrythia\/Tut-Audio.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "287314835EB35DD6FD161AF096DD5346223A2EEA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cherrythia\/XcodeProtocolTutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "74F87D882F192BE3C369626702D5EF9BFBFB008E"
+    }
+  ]
+}
