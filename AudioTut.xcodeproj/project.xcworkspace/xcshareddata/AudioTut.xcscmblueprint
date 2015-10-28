@@ -14,7 +14,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "AudioTut",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Downloads\/Sing-d63989889ef14aa295ed8260788ba5ff811c5313\/AudioTut.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AudioTut.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cherrythia\/QRCode-Scanner.git",

@@ -23,7 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    /***************Player******************/
+#pragma mark - Player
+    
     NSString *stringPath = [[NSBundle mainBundle]pathForResource:@"BLANK SPACE - Taylor Swift (The Sam Willows Cover)" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:stringPath];
     NSError *error;
@@ -31,6 +32,8 @@
     [avPlayer setNumberOfLoops:0];
     [avPlayer setVolume:self.sliderVolumeOutlet.value];
     [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updatemyProgress) userInfo:nil repeats:YES];
+    
+#pragma mark - Recording View
     
     Recording *recordingView = [[Recording alloc]init];
     [self.view addSubview:recordingView];
